@@ -22,8 +22,6 @@ def win_condition(matriz,option):
     else: 
         return False
     
-    
-
 
 def game():
     matriz = [['1','2','3'],
