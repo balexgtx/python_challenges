@@ -1,3 +1,12 @@
+import random
+
+def check_position(matriz,n,m):
+    if matriz[n][m] != "X" and matriz[n][m] != "O":
+        return True
+    else:
+        return False
+
+
 def win_condition(matriz,option):
     #fila x columna
     #Test Horizontal
@@ -27,8 +36,10 @@ def game():
     matriz = [['1','2','3'],
               ['4','5','6'],
               ['7','8','9']]
-    print(win_condition(matriz, 'X'))
-    print(matriz[0][1], matriz[1][1], matriz[2][1])
+    #print(win_condition(matriz, 'X'))
+    #print(matriz[0][1], matriz[1][1], matriz[2][1])
+    #print(check_position(matriz, 0,0))
+    #print(matriz[0][0])
 
 def run():
     game()
