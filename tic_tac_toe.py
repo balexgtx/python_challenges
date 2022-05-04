@@ -44,6 +44,46 @@ def print_matriz(matriz):
         ''')
 
 
+def convert_choice_into_position(n):
+    if n == 1:
+        x = 0
+        y = 0
+        return x,y
+    elif n == 2:
+        x = 0
+        y = 1
+        return x,y
+    elif n == 3:
+        x = 0
+        y = 2
+        return x, y
+    elif n == 4:
+        x = 1
+        y = 0
+        return x, y
+    elif n == 5:
+        x = 1
+        y = 1
+        return x, y
+    elif n == 6:
+        x = 1
+        y = 2
+        return x, y
+    elif n == 7:
+        x = 2
+        y = 0
+        return x, y
+    elif n == 8:
+        x = 2
+        y = 1
+        return x, y
+    elif n == 0:
+        x = 2
+        y = 2
+        return x, y
+    
+
+
 def game():
     matriz = [['1','2','3'],
               ['4','5','6'],
@@ -53,13 +93,16 @@ def game():
     #print(check_position(matriz, 0,0))
     #print(matriz[0][0])
     print('El juego ha comenzado!')
-    computer_position_x = random.randint(0,2)
+        #computer_position_x = random.randint(0,2)
     #print(computer_position_x)
-    computer_position_y = random.randint(0,2)
+        #computer_position_y = random.randint(0,2)
     #print(computer_position_y)
-    print(print_matriz(matriz))
+    
     #user_x = int(input('Ingresa la coordenada X: '))
     #user_y = int(input('Ingresa la coordenada Y: '))
+    #print(print_matriz(matriz))
+    print_matriz(matriz)
+    print(int(input('Has tu primer movimiento! ingresa el numero en el que deseas colocar tu ficha!: ')))
     
     
     
