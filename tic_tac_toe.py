@@ -6,7 +6,7 @@ def check_position(matriz,n,m):
     else:
         return False
 
-
+#fila x columna
 def win_condition(matriz,option):
     #fila x columna
     #Test Horizontal
@@ -32,6 +32,18 @@ def win_condition(matriz,option):
         return False
     
 
+def print_matriz(matriz):
+    print(f'''
+         {matriz[0][0]} | {matriz[0][1]} | {matriz[0][2]}
+        -----------
+        
+         {matriz[1][0]} | {matriz[1][1]} | {matriz[1][2]}
+        -----------
+        
+         {matriz[2][0]} | {matriz[2][1]} | {matriz[2][2]}
+        ''')
+
+
 def game():
     matriz = [['1','2','3'],
               ['4','5','6'],
@@ -40,6 +52,17 @@ def game():
     #print(matriz[0][1], matriz[1][1], matriz[2][1])
     #print(check_position(matriz, 0,0))
     #print(matriz[0][0])
+    print('El juego ha comenzado!')
+    computer_position_x = random.randint(0,2)
+    #print(computer_position_x)
+    computer_position_y = random.randint(0,2)
+    #print(computer_position_y)
+    print(print_matriz(matriz))
+    #user_x = int(input('Ingresa la coordenada X: '))
+    #user_y = int(input('Ingresa la coordenada Y: '))
+    
+    
+    
 
 def run():
     game()
