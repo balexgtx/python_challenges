@@ -102,7 +102,10 @@ def game():
     #user_y = int(input('Ingresa la coordenada Y: '))
     #print(print_matriz(matriz))
     print_matriz(matriz)
-    print(int(input('Has tu primer movimiento! ingresa el numero en el que deseas colocar tu ficha!: ')))
+    n = int(input('Ingresa el numero al que quieres mover tu ficha!: '))
+    a = convert_choice_into_position(n)
+    print(matriz[a[0]][a[1]])
+    
     
     
     
