@@ -11,7 +11,7 @@ def up_down(i):
 
 
 def run():
-    print(up_down(4))
+    print(up_down(2))
 
 
 if __name__ == "__main__":
